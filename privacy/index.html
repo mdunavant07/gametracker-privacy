@@ -48,7 +48,7 @@
 <body>
     <main>
         <h1>District Game Tracker Privacy Policy</h1>
-        <p class="updated">Effective and last updated: September 25, 2026</p>
+        <p class="updated">Effective and last updated: October 4, 2026</p>
 
         <p>
             District Game Tracker helps you keep a personal record of sporting events you have attended.
@@ -119,7 +119,8 @@
         <p>
             When you create a backup, District Game Tracker writes a file containing the collection name,
             optional birthday, and game records. If you select “Include Photos,” the backup also
-            contains your saved photos. You decide where to send or save an exported backup using
+            contains your saved photos. A copy is saved in the app's local documents. Backups are
+            not password protected. You decide where to send or save an exported backup using
             Apple's share sheet. Exported files are outside District Game Tracker's control; deleting the app
             or its data does not delete copies you saved elsewhere or gave to another person.
         </p>
@@ -127,15 +128,32 @@
         <h2>Retention and deletion</h2>
         <p>
             Information remains on your device and in iCloud until you delete it, remove the app's
-            iCloud data, or otherwise manage it through Apple’s iCloud settings. Deleting a game or
-            photo in the app removes it from the active collection and synchronizes that change
-            through CloudKit. Owners can remove eligible collections and manage CloudKit sharing.
+            iCloud data, or otherwise manage it through Apple’s iCloud settings. Deleting a game
+            removes its active game and photo records and synchronizes that deletion through
+            CloudKit. A recovery copy of the game and its photos is retained for 30 days only on
+            the device that deleted it. Recovery copies are not synced or included in device
+            backups or exported game backups. The app shows the recovery deadline and offers
+            Restore, Delete Permanently, and confirmed Clear All actions. Expired copies are
+            removed when the app next checks them; removal may occur after 30 days if the app
+            has been closed. Expired copies cannot be restored. Restoring requires current edit
+            access to the original collection and synchronizes the restored content normally.
+            If the source collection is deleted or disappears locally after access is revoked,
+            its recovery copies are removed on the next collection reload. Removing an individual
+            photo in the editor does not create a recovery copy. Owners can remove eligible
+            collections and manage CloudKit sharing.
             Apple may retain backups or service records for a limited period under its own policies.
         </p>
         <p>
             You are responsible for deleting exported backup files from every location where you
             stored or shared them. A share participant may also retain information they previously
             viewed or exported.
+        </p>
+        <p>
+            Deleting a game or collection does not delete previously created backup files or photos
+            you saved to Apple's Photos app. Derived statistics and map caches may remain on the
+            device until replaced, cleared by the system where applicable, or removed with the app.
+            Deleting the app removes its local data, including local backups and recovery copies,
+            but does not by itself delete your iCloud collection or copies held by other people.
         </p>
 
         <h2>Security</h2>
